@@ -2187,13 +2187,13 @@ ghost clyde_movement(char **map, ghost clyde, pacman pacman)
     else if(pacman.power_up == 1)
     {
       if((clyde.x0 == pacman.x0 && clyde.y0==pacman.y0)&&(clyde.x1==pacman.x1 && clyde.y1==pacman.y1)&&(clyde.x2==pacman.x2 && clyde.y2==pacman.y2))
-         clyde.last_move == 'k';
+         clyde.last_move = 'k';
       else if((clyde.x0 == pacman.x0 && clyde.y0==pacman.y0)&&(clyde.x3==pacman.x3 && clyde.y3==pacman.y3)&&(clyde.x6==pacman.x6 && clyde.y6==pacman.y6))
-         clyde.last_move == 'k';
+         clyde.last_move = 'k';
       else if((clyde.x2 == pacman.x2 && clyde.y2==pacman.y2)&&(clyde.x5==pacman.x5 && clyde.y5==pacman.y5)&&(clyde.x8==pacman.x8 && clyde.y8==pacman.y8))
-         clyde.last_move == 'k';
+         clyde.last_move = 'k';
       else if((clyde.x6 == pacman.x6 && clyde.y6==pacman.y6)&&(clyde.x7==pacman.x7 && clyde.y7==pacman.y7)&&(clyde.x8==pacman.x8 && clyde.y8==pacman.y8))
-         clyde.last_move == 'k';
+         clyde.last_move = 'k';
     }
    return clyde;
 }
